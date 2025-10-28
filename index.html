@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Satyam Saroj — Full-Stack Java Developer</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Background Effects -->
+    <canvas id="matrixBackground"></canvas>
+    <canvas id="particlesBackground"></canvas>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="logo-text">Codeverse</div>
+        <ul class="nav-right">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#expertise" class="nav-link">Expertise</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><button id="resumeBtn" class="btn resume-btn">Resume</button></li>
+        </ul>
+    </nav>
+
+    <main class="snap-container">
+        <!-- HERO -->
+        <section id="home" class="snap-section hero-section">
+            <div class="hero-inner reveal">
+                <h1 class="intro">I'm <span class="name">Satyam Saroj</span></h1>
+                <h2 id="typed" class="typed-role"></h2>
+
+                <p class="hero-sub">
+                    I build reliable, scalable, and maintainable software systems.<br>
+                    Focused on <strong>Java</strong>, <strong>Spring Boot</strong>, and <strong>Microservices</strong> —
+                    with <strong>Docker</strong> & <strong>Kubernetes</strong>.
+                </p>
+
+                <div class="hero-cta">
+                    <a class="btn primary" href="#projects">View Projects</a>
+                    <a class="btn outline" href="#contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="snap-section glass-section">
+            <div class="section-inner reveal">
+                <h2 class="section-title">About</h2>
+                <p class="muted">
+                    I'm a Software Engineer & Full-Stack Java Developer passionate about backend architecture and system
+                    design.
+                    Skilled in <b>Java</b>, <b>Spring Boot</b>, and <b>Microservices</b>, I specialize in building
+                    scalable backend systems
+                    and deploying with <b>Docker</b> and <b>Kubernetes</b>.
+                </p>
+
+                <div class="chips">
+                    <span class="chip">Java</span>
+                    <span class="chip">Spring Boot</span>
+                    <span class="chip">Microservices</span>
+                    <span class="chip">Hibernate</span>
+                    <span class="chip">Docker</span>
+                    <span class="chip">Kubernetes</span>
+                    <span class="chip">Git / GitHub</span>
+                    <span class="chip">Postman</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERTISE -->
+        <section id="expertise" class="snap-section glass-section">
+            <div class="section-inner reveal">
+                <h2 class="section-title">Expertise</h2>
+                <div class="grid">
+                    <div class="grid-card reveal">
+                        <h4>Backend Systems</h4>
+                        <p class="muted">REST API design, database modeling, and backend optimization.</p>
+                    </div>
+                    <div class="grid-card reveal">
+                        <h4>Microservices</h4>
+                        <p class="muted">Distributed service design, messaging, and observability.</p>
+                    </div>
+                    <div class="grid-card reveal">
+                        <h4>DevOps & Cloud</h4>
+                        <p class="muted">Dockerization, Kubernetes orchestration, CI/CD pipelines.</p>
+                    </div>
+                    <div class="grid-card reveal">
+                        <h4>AI Integration</h4>
+                        <p class="muted">Integrating Spring AI for intelligent monitoring and automation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="snap-section glass-section">
+            <div class="section-inner reveal">
+                <h2 class="section-title">Projects</h2>
+                <div class="project-list">
+                    <article class="project reveal">
+                        <h3>🎬 Online Movie Ticket Booking Platform</h3>
+                        <p class="muted">A full-stack movie ticket booking system with secure payments, authentication,
+                            and admin dashboard.</p>
+                        <p class="tech">Java • Spring Boot • Hibernate • HTML • CSS</p>
+                        <a href="https://github.com/codversesatyam" target="_blank" class="btn outline small">View
+                            Code</a>
+                    </article>
+
+                    <article class="project reveal">
+                        <h3>🧠 AI-Powered Real-Time System Monitoring Dashboard</h3>
+                        <p class="muted">Real-time system monitoring with AI-driven predictions using Spring Boot and
+                            OSHI.</p>
+                        <p class="tech">Spring Boot • OSHI • Docker • Chart.js</p>
+                        <a href="https://github.com/codversesatyam" target="_blank" class="btn outline small">View
+                            Code</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT TRIGGER BUTTON -->
+        <section id="contact" class="snap-section glass-section">
+            <div class="section-inner center reveal">
+                <h2 class="section-title">Contact</h2>
+                <p class="muted">Let’s connect — I’m always open to new opportunities & collaborations.</p>
+
+                <button id="openContact" class="btn primary">Contact Me</button>
+
+                <div class="contact-links">
+                    <a class="btn outline" href="https://github.com/codversesatyam" target="_blank">GitHub</a>
+                    <a class="btn outline" href="https://www.linkedin.com/in/satyam-saroj-0957b7268"
+                        target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM MODAL -->
+        <div id="contactModal" class="modal" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" id="contactClose">&times;</button>
+                <div class="modal-body">
+                    <h2 class="section-title">Send a Message 💬</h2>
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required />
+                        <input type="email" id="email" name="email" placeholder="Your Email" required />
+                        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- RESUME MODAL -->
+        <div id="resumeModal" class="modal" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">&times;</button>
+                <div class="modal-body">
+                    <embed src="Satyam_Saroj_Resume.pdf" type="application/pdf" width="100%" height="600px" />
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
